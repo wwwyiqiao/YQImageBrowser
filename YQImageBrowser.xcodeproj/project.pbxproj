@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		550E23411E2757CD00CD47A7 /* YQImageBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550E23401E2757CD00CD47A7 /* YQImageBrowser.swift */; };
+		550E23431E275D1000CD47A7 /* YQAssetFetchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550E23421E275D1000CD47A7 /* YQAssetFetchManager.swift */; };
+		5546CA6E1E26090E00BC0E01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546CA6D1E26090E00BC0E01 /* AppDelegate.swift */; };
+		5546CA701E26090E00BC0E01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546CA6F1E26090E00BC0E01 /* ViewController.swift */; };
+		5546CA731E26090E00BC0E01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5546CA711E26090E00BC0E01 /* Main.storyboard */; };
+		5546CA751E26090E00BC0E01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5546CA741E26090E00BC0E01 /* Assets.xcassets */; };
+		5546CA781E26090E00BC0E01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5546CA761E26090E00BC0E01 /* LaunchScreen.storyboard */; };
+		5546CA821E260D1500BC0E01 /* YQAssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546CA801E260D1500BC0E01 /* YQAssetCell.swift */; };
+		5546CA831E260D1500BC0E01 /* YQBadgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546CA811E260D1500BC0E01 /* YQBadgeButton.swift */; };
+		5546CA851E260DCF00BC0E01 /* YQPhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546CA841E260DCF00BC0E01 /* YQPhotoListViewController.swift */; };
+		5546CA871E261C3300BC0E01 /* YQAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546CA861E261C3300BC0E01 /* YQAlbum.swift */; };
+		558686951E3061630008E811 /* YQAlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558686941E3061630008E811 /* YQAlbumCell.swift */; };
+		559250091E5D6BF8003BA252 /* YQDetectingTapImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559250081E5D6BF8003BA252 /* YQDetectingTapImageView.swift */; };
+		5592500C1E5D6BFE003BA252 /* YQImageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5592500A1E5D6BFE003BA252 /* YQImageViewer.swift */; };
+		5592500D1E5D6BFE003BA252 /* YQImageViewerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5592500B1E5D6BFE003BA252 /* YQImageViewerCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		550E23401E2757CD00CD47A7 /* YQImageBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQImageBrowser.swift; sourceTree = "<group>"; };
+		550E23421E275D1000CD47A7 /* YQAssetFetchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQAssetFetchManager.swift; sourceTree = "<group>"; };
+		5546CA6A1E26090E00BC0E01 /* YQImageBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQImageBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5546CA6D1E26090E00BC0E01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5546CA6F1E26090E00BC0E01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5546CA721E26090E00BC0E01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5546CA741E26090E00BC0E01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5546CA771E26090E00BC0E01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5546CA791E26090E00BC0E01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5546CA801E260D1500BC0E01 /* YQAssetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQAssetCell.swift; sourceTree = "<group>"; };
+		5546CA811E260D1500BC0E01 /* YQBadgeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQBadgeButton.swift; sourceTree = "<group>"; };
+		5546CA841E260DCF00BC0E01 /* YQPhotoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQPhotoListViewController.swift; sourceTree = "<group>"; };
+		5546CA861E261C3300BC0E01 /* YQAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQAlbum.swift; sourceTree = "<group>"; };
+		558686941E3061630008E811 /* YQAlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQAlbumCell.swift; sourceTree = "<group>"; };
+		559250081E5D6BF8003BA252 /* YQDetectingTapImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQDetectingTapImageView.swift; sourceTree = "<group>"; };
+		5592500A1E5D6BFE003BA252 /* YQImageViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQImageViewer.swift; sourceTree = "<group>"; };
+		5592500B1E5D6BFE003BA252 /* YQImageViewerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQImageViewerCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5546CA671E26090D00BC0E01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5546CA611E26090D00BC0E01 = {
+			isa = PBXGroup;
+			children = (
+				5546CA6C1E26090E00BC0E01 /* YQImageBrowser */,
+				5546CA6B1E26090E00BC0E01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5546CA6B1E26090E00BC0E01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5546CA6A1E26090E00BC0E01 /* YQImageBrowser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5546CA6C1E26090E00BC0E01 /* YQImageBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				5546CA7F1E260B0C00BC0E01 /* ImageBrowser */,
+				5546CA6D1E26090E00BC0E01 /* AppDelegate.swift */,
+				5546CA6F1E26090E00BC0E01 /* ViewController.swift */,
+				5546CA711E26090E00BC0E01 /* Main.storyboard */,
+				5546CA741E26090E00BC0E01 /* Assets.xcassets */,
+				5546CA761E26090E00BC0E01 /* LaunchScreen.storyboard */,
+				5546CA791E26090E00BC0E01 /* Info.plist */,
+			);
+			path = YQImageBrowser;
+			sourceTree = "<group>";
+		};
+		5546CA7F1E260B0C00BC0E01 /* ImageBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				5592500A1E5D6BFE003BA252 /* YQImageViewer.swift */,
+				5592500B1E5D6BFE003BA252 /* YQImageViewerCell.swift */,
+				559250081E5D6BF8003BA252 /* YQDetectingTapImageView.swift */,
+				5546CA861E261C3300BC0E01 /* YQAlbum.swift */,
+				5546CA801E260D1500BC0E01 /* YQAssetCell.swift */,
+				5546CA811E260D1500BC0E01 /* YQBadgeButton.swift */,
+				5546CA841E260DCF00BC0E01 /* YQPhotoListViewController.swift */,
+				550E23401E2757CD00CD47A7 /* YQImageBrowser.swift */,
+				550E23421E275D1000CD47A7 /* YQAssetFetchManager.swift */,
+				558686941E3061630008E811 /* YQAlbumCell.swift */,
+			);
+			name = ImageBrowser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5546CA691E26090D00BC0E01 /* YQImageBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5546CA7C1E26090E00BC0E01 /* Build configuration list for PBXNativeTarget "YQImageBrowser" */;
+			buildPhases = (
+				5546CA661E26090D00BC0E01 /* Sources */,
+				5546CA671E26090D00BC0E01 /* Frameworks */,
+				5546CA681E26090D00BC0E01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YQImageBrowser;
+			productName = YQImageBrowser;
+			productReference = 5546CA6A1E26090E00BC0E01 /* YQImageBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5546CA621E26090D00BC0E01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = wyq;
+				TargetAttributes = {
+					5546CA691E26090D00BC0E01 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8BB9UB7P35;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5546CA651E26090D00BC0E01 /* Build configuration list for PBXProject "YQImageBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5546CA611E26090D00BC0E01;
+			productRefGroup = 5546CA6B1E26090E00BC0E01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5546CA691E26090D00BC0E01 /* YQImageBrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5546CA681E26090D00BC0E01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5546CA781E26090E00BC0E01 /* LaunchScreen.storyboard in Resources */,
+				5546CA751E26090E00BC0E01 /* Assets.xcassets in Resources */,
+				5546CA731E26090E00BC0E01 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5546CA661E26090D00BC0E01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5546CA851E260DCF00BC0E01 /* YQPhotoListViewController.swift in Sources */,
+				5546CA871E261C3300BC0E01 /* YQAlbum.swift in Sources */,
+				5546CA701E26090E00BC0E01 /* ViewController.swift in Sources */,
+				550E23431E275D1000CD47A7 /* YQAssetFetchManager.swift in Sources */,
+				5546CA6E1E26090E00BC0E01 /* AppDelegate.swift in Sources */,
+				5546CA821E260D1500BC0E01 /* YQAssetCell.swift in Sources */,
+				559250091E5D6BF8003BA252 /* YQDetectingTapImageView.swift in Sources */,
+				5546CA831E260D1500BC0E01 /* YQBadgeButton.swift in Sources */,
+				550E23411E2757CD00CD47A7 /* YQImageBrowser.swift in Sources */,
+				5592500D1E5D6BFE003BA252 /* YQImageViewerCell.swift in Sources */,
+				5592500C1E5D6BFE003BA252 /* YQImageViewer.swift in Sources */,
+				558686951E3061630008E811 /* YQAlbumCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5546CA711E26090E00BC0E01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5546CA721E26090E00BC0E01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5546CA761E26090E00BC0E01 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5546CA771E26090E00BC0E01 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5546CA7A1E26090E00BC0E01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5546CA7B1E26090E00BC0E01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5546CA7D1E26090E00BC0E01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8BB9UB7P35;
+				INFOPLIST_FILE = YQImageBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sw.YQImageBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5546CA7E1E26090E00BC0E01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8BB9UB7P35;
+				INFOPLIST_FILE = YQImageBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sw.YQImageBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5546CA651E26090D00BC0E01 /* Build configuration list for PBXProject "YQImageBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5546CA7A1E26090E00BC0E01 /* Debug */,
+				5546CA7B1E26090E00BC0E01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5546CA7C1E26090E00BC0E01 /* Build configuration list for PBXNativeTarget "YQImageBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5546CA7D1E26090E00BC0E01 /* Debug */,
+				5546CA7E1E26090E00BC0E01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5546CA621E26090D00BC0E01 /* Project object */;
+}
