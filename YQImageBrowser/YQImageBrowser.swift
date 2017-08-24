@@ -97,7 +97,7 @@ class YQImageBrowser: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: TableViewConfig.cellIdentifier, for: indexPath)
         
         let album = albums[indexPath.row]
-        let asset = album.results.firstObject!
+        let asset = album.results.lastObject!
         let options = PHImageRequestOptions()
         options.resizeMode = .exact
         options.isSynchronous = true
@@ -106,6 +106,8 @@ class YQImageBrowser: UITableViewController {
         }
 
         cell.textLabel?.text = album.name ?? "相册"
+        cell.detailTextLabel?.text = "(\(album.count))";
+        cell.accessoryType = .disclosureIndicator
 
         return cell
     }

@@ -312,7 +312,7 @@
 				DEVELOPMENT_TEAM = 8BB9UB7P35;
 				INFOPLIST_FILE = YQImageBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sw.YQImageBrowser;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyq.YQImageBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -325,7 +325,7 @@
 				DEVELOPMENT_TEAM = 8BB9UB7P35;
 				INFOPLIST_FILE = YQImageBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sw.YQImageBrowser;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyq.YQImageBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

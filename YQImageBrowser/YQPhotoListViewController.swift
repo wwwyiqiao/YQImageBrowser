@@ -62,7 +62,7 @@ class YQPhotoListViewController: UIViewController {
     
     init(album: YQAlbum) {
         currentAlbum = album
-        assetsArray = YQAssetFetchManager.fetchImageAssetsViaCollectionResults(results: currentAlbum.results)
+        assetsArray = YQAssetFetchManager.fetchImageAssetsViaCollectionResults(results: currentAlbum.results).reversed()
         selectedIndexes = []
         super.init(nibName: nil, bundle: nil)
     }
@@ -186,11 +186,11 @@ extension YQPhotoListViewController: UICollectionViewDataSource {
             cell.imageView.image = image
         }
         
-        cell.selectItemClosure = { [unowned self] (isSelected) in
+        cell.selectItemClosure = { [weak self] (isSelected) in
             if isSelected {
-                self.selectedIndexes.insert(index)
+                self?.selectedIndexes.insert(index)
             } else {
-                self.selectedIndexes.remove(index)
+                self?.selectedIndexes.remove(index)
             }
         }
         

@@ -20,36 +20,24 @@ class YQAssetFetchManager {
     /// - Returns: [YQAlbum]
     func fetchAllAlbums() -> [YQAlbum]{
         var albums: [YQAlbum] = []
+        let albumTypes: [PHAssetCollectionType] = [.smartAlbum, .album]
         
-        let options = PHFetchOptions()
-        options.predicate = NSPredicate(format: "estimatedAssetCount > 0")
-        
-        //Alums
-        let allAlbumsResult = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .albumRegular, options: nil)
-        allAlbumsResult.enumerateObjects(using: { (collection, index, _) in
-            let title = collection.localizedTitle
-            let options = PHFetchOptions()
-            options.predicate = NSPredicate(format: "mediaType = %d", PHAssetMediaType.image.rawValue)
-            let results = PHAsset.fetchAssets(in: collection, options: options)
-            if results.count > 0 {
-                let yqAlbum = YQAlbum(results: results, name: title, startDate: collection.startDate as NSDate?, identifier: collection.localIdentifier)
-                albums.append(yqAlbum)
-            }
-        })
-        
-        //Smart Albums
-        let smartAlbumsResult = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .smartAlbumUserLibrary, options: options)
-        smartAlbumsResult.enumerateObjects(using: { (collection, index, _) in
-            let title = collection.localizedTitle
-            let options = PHFetchOptions()
-            options.predicate = NSPredicate(format: "mediaType = %i", PHAssetMediaType.image.rawValue)
-            let results = PHAsset.fetchAssets(in: collection, options: options)
-            if results.count > 0 {
-                let yqAlbum = YQAlbum(results: results, name: title, startDate: collection.startDate as NSDate?, identifier: collection.localIdentifier)
-                albums.append(yqAlbum)
-            }
-        })
-        
+        for albumType in albumTypes {
+            
+            let allAlbumsResult = PHAssetCollection.fetchAssetCollections(with: albumType, subtype: .any, options: nil)
+            
+            allAlbumsResult.enumerateObjects(using: { (collection, index, _) in
+                let title = collection.localizedTitle
+                let options = PHFetchOptions()
+                options.predicate = NSPredicate(format: "mediaType = %d", PHAssetMediaType.image.rawValue)
+                let results = PHAsset.fetchAssets(in: collection, options: options)
+                if results.count > 0 {
+                    let yqAlbum = YQAlbum(results: results, name: title, startDate: collection.startDate as NSDate?, identifier: collection.localIdentifier)
+                    albums.append(yqAlbum)
+                }
+            })
+        }
+
         return albums
     }
     
@@ -59,7 +47,7 @@ class YQAssetFetchManager {
         guard results != nil else {
             return resutsArray
         }
-        results?.enumerateObjects({ (asset, index, isStop) -> Void in
+        results?.enumerateObjects({ (asset, _, _) -> Void in
             resutsArray.append(asset)
         })
         return resutsArray
