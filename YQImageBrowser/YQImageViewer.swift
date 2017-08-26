@@ -141,9 +141,9 @@ class YQImageViewer: UIViewController, UICollectionViewDelegateFlowLayout, UICol
             }
         }
         
-        cell.singleTapAction = {
-            if let hidden = self.navigationController?.navigationBar.isHidden {
-                self.navigationController?.setNavigationBarHidden(!hidden, animated: true)
+        cell.singleTapAction = { [weak self] in
+            if let hidden = self?.navigationController?.navigationBar.isHidden {
+                self?.navigationController?.setNavigationBarHidden(!hidden, animated: true)
                 UIApplication.shared.statusBarStyle = hidden ? .lightContent : .default
             }
         }

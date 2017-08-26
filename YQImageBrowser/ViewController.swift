@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Photos
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, YQImageBrowserDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +22,42 @@ class ViewController: UIViewController {
 
     @IBAction func tappedOnButton() {
         let imageBrowser = YQImageBrowser()
+        imageBrowser.delegate = self
         let naviVC = UINavigationController(rootViewController: imageBrowser)
-        self.show(naviVC, sender: nil)
+        self.present(naviVC, animated: true, completion: nil)
+    }
+    
+    func imageBrowser(_ imageBrowser: YQImageBrowser, didSelectedPhotos photos: [PHAsset]) {
+        imageBrowser.dismiss(animated: true, completion: nil)
+        
+        let requestUrlGroup = DispatchGroup()
+        
+        DispatchQueue.global().async {
+            var imageUrls: [URL] = []
+            for asset in photos {
+                let options: PHContentEditingInputRequestOptions = PHContentEditingInputRequestOptions()
+                options.canHandleAdjustmentData = {(adjustmeta: PHAdjustmentData) -> Bool in
+                    return true
+                }
+                
+                requestUrlGroup.enter()
+                asset.requestContentEditingInput(with: options, completionHandler: { (input, _) in
+                    if let url = input?.fullSizeImageURL {
+                        imageUrls.append(url)
+                        requestUrlGroup.leave()
+                    }
+                })
+            }
+            
+            requestUrlGroup.wait()
+            DispatchQueue.main.async {
+                print(imageUrls)
+            }
+        }
+    }
+    
+    func imageBroserDidCancel(_ imageBrowser: YQImageBrowser) {
+        imageBrowser.dismiss(animated: true, completion: nil)
     }
 }
 

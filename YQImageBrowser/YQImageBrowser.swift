@@ -74,7 +74,7 @@ class YQImageBrowser: UITableViewController {
     // MARK: - User Interaction
     
     @objc private func tappedOnCancelButtonItem() {
-        self.navigationController?.dismiss(animated: true, completion: nil)
+        self.delegate?.imageBroserDidCancel(self)
     }
     
     // MARK: - TableView Delegate

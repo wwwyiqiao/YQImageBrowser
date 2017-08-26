@@ -121,7 +121,11 @@ class YQPhotoListViewController: UIViewController {
     // MARK: - User Interaction
     
     @objc private func tappedOnBadgeButton() {
-        self.navigationController?.dismiss(animated: true, completion: nil)
+        let selectedAssets = selectedIndexes.map { (index) -> PHAsset in
+            return assetsArray[index]
+        }
+        let browser = self.navigationController?.viewControllers.first as! YQImageBrowser
+        browser.delegate?.imageBrowser(browser, didSelectedPhotos: selectedAssets)
     }
 
     @objc private func tappedOnPreviewButtonItem() {
@@ -134,7 +138,8 @@ class YQPhotoListViewController: UIViewController {
     }
     
     @objc private func tappedOnCancelButtonItem() {
-        self.navigationController?.dismiss(animated: true, completion: nil)
+        let browser = self.navigationController?.viewControllers.first as! YQImageBrowser
+        browser.delegate?.imageBroserDidCancel(browser)
     }
 }
 
